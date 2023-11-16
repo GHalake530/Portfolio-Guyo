@@ -10,7 +10,7 @@ import TailWind from '../data/tailwind.png';
 
 function Skill() {
   return (
-    <div name='skills' className='bg-black text-[#968d79]'>
+    <div name='skills' className='bg-black w-full h-screen text-[#968d79]'>
         {/* container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
