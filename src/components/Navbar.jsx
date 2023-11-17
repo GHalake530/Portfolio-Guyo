@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../data/mylogonobg.png';
 import { Link } from 'react-scroll';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -12,7 +13,10 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[150px] flex justify-between items-center px-4 bg-[#000000] text-[#E93F33]'>
       <div>
-        <img src={Logo} alt='Logo' style={{ width: '120px' }} />
+        {/* Link to navigate back to home */}
+        <Link to='home' smooth={true} duration={500}>
+          <img src={Logo} alt='Logo' style={{ width: '120px', cursor: 'pointer' }} />
+        </Link>
       </div>
 
       {/* menu */}
@@ -62,3 +66,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
